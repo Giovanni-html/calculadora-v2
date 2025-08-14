@@ -18,8 +18,9 @@ def calculadora(bola):
             return antes * sqrt(depois)
 
         else:
-            return eval(rola)
+            return eval(bola)
 
     except Exception as e:
         return f"Erro: {e}"
+
 
