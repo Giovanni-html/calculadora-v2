@@ -45,11 +45,11 @@ app_label.place(x=0, y=0)
 
 # funções
 
-def entrar_valores(rola):
+def entrar_valores(bola):
 
     global todos_valores
 
-    todos_valores = todos_valores + str(rola)
+    todos_valores = todos_valores + str(bola)
 
     if todos_valores.endswith("6+9"):
         valor_texto.set("esperando '=' ...")
@@ -168,3 +168,4 @@ b_20.place(x=196, y=276)  # 196    # coluna colorida
 
 
 janela.mainloop()
+
