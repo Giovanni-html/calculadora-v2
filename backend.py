@@ -1,18 +1,18 @@
 from math import sqrt
 
 
-def calculadora(rola):
+def calculadora(bola):
     try:
-        if "%" in rola:
-            partes = rola.split("%")
+        if "%" in bola:
+            partes = bola.split("%")
             return (float(partes[0]) / 100) * float(partes[1])
 
-        elif "**" in rola:
-            partes = rola.split("**")
+        elif "**" in bola:
+            partes = bola.split("**")
             return float(partes[0]) ** float(partes[1])
 
-        elif "sqrt" in rola:
-            partes = rola.split("sqrt")
+        elif "sqrt" in bola:
+            partes = bola.split("sqrt")
             antes = float(partes[0]) if partes[0] else 1
             depois = float(partes[1])
             return antes * sqrt(depois)
@@ -22,3 +22,4 @@ def calculadora(rola):
 
     except Exception as e:
         return f"Erro: {e}"
+
